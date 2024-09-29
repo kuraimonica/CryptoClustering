@@ -1,12 +1,16 @@
 # CryptoClustering
 Module 19 Challenge
 
-Prepare the Data
+My code and diagrams are in the Crypto_Clustering.ipynb file
+
+I did the following steps for this challenge:
+
+Preparing the Data
 
 I Used the StandardScaler() module from scikit-learn to normalize the data from the CSV file.
 Created a DataFrame with the scaled data and set the "coin_id" index from the original DataFrame as the index for the new DataFrame.
 
-Find the Best Value for k Using the Scaled DataFrame
+Finding the Best Value for k Using the Scaled DataFrame
 
 I used the elbow method to find the best value for k using the following steps:
 I created a list with the number of k values from 1 to 11.
@@ -16,7 +20,7 @@ I created a dictionary with the data to plot the elbow curve.
 Ploted a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
 
-Cluster Cryptocurrencies with K-means Using the Scaled DataFrame
+Clustering Cryptocurrencies with K-means Using the Scaled DataFrame
 
 I used the following steps to cluster the cryptocurrencies for the best value for k on the scaled DataFrame:
 Initialised the K-means model with the best value for k.
